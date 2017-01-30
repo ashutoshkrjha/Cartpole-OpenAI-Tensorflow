@@ -17,3 +17,6 @@ $ python cartpole.py
 ## Fun-Side Note:
 
 I came across this while reading about actor-critic methods as a part of review on Generative Adversarial Networks. Turns out Policy Gradient Methods are much better in the continuous space than Q-learning or other value function based methods.
+
+### Edit:
+Turns out that Policy Gradient Methods seem to be doing well in this case because the number of episodes is quite small and the rewards are being provided continuously. In case the rewards were sparse and the number of episodes were high, the technique would fail due to high variance of the algorithm. 
